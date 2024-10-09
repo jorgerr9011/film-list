@@ -10,4 +10,5 @@ public class QuickFlickGalaxyBackendApplication {
 		SpringApplication.run(QuickFlickGalaxyBackendApplication.class, args);
 	}
 
+
 }
