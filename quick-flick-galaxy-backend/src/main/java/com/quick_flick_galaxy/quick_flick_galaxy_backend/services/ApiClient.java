@@ -3,11 +3,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
+
+/*
 import io.github.cdimascio.dotenv.Dotenv;
-
-@Service
+*/
 public class ApiClient {
-
+/*
     static Dotenv dotenv = Dotenv.load();
 
     static String apiKey = dotenv.get("API_KEY");
@@ -41,4 +42,5 @@ public class ApiClient {
         String data = apiClient.fetchDataFromApi();
         System.out.println("Data from API: " + data);
     }
+    */
 }

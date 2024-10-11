@@ -43,7 +43,7 @@ public class MovieService {
             movie.setOverview(movieUpdated.getOverview());
             movie.setPopularity(movieUpdated.getPopularity());
             movie.setTitle(movieUpdated.getTitle());
-            movie.setReleaseDate(movieUpdated.getReleaseDate());
+            movie.setReleasedate(movieUpdated.getReleasedate());
 
             return movie;
         } else {
@@ -51,7 +51,17 @@ public class MovieService {
         }
     }
 
-    public Boolean deleteMovieById(Long id){
+    public Boolean deleteMovies() {
+        try {
+            movieRepository.deleteAll();
+
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public Boolean deleteMovieById(Long id) {
         try {
             movieRepository.deleteById(id);
 

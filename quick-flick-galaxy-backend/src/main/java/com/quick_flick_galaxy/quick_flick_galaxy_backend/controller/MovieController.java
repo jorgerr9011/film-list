@@ -39,6 +39,12 @@ public class MovieController {
         return this.movieService.updateMovieById(movieUpdated, id);
     }
 
+    @DeleteMapping
+    public Boolean deleteMovies(){
+
+        return this.movieService.deleteMovies();
+    }
+
     @DeleteMapping(path = "/{id}")
     public Boolean deleteMovieById(@PathVariable Long id){
 

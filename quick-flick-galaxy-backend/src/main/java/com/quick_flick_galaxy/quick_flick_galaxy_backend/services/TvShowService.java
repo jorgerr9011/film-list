@@ -28,6 +28,7 @@ public class TvShowService {
     /*
         El optional sirve para que se pueda devolver o una Movie o un null
     * */
+
     public Optional<TvShowModel> getTvShowById(Long id){
 
         return tvShowRepository.findById(id);
@@ -42,11 +43,21 @@ public class TvShowService {
             tvShow.setOverview(tvShowUpdated.getOverview());
             tvShow.setPopularity(tvShowUpdated.getPopularity());
             tvShow.setTitle(tvShowUpdated.getTitle());
-            tvShow.setReleaseDate(tvShowUpdated.getReleaseDate());
+            tvShow.setReleasedate(tvShowUpdated.getReleasedate());
 
             return tvShow;
         } else {
             throw new EntityNotFoundException("Movie with ID "+ id + " not found.");
+        }
+    }
+
+    public Boolean deleteTvShows() {
+        try {
+            tvShowRepository.deleteAll();
+
+            return true;
+        } catch (Exception e) {
+            return false;
         }
     }
 

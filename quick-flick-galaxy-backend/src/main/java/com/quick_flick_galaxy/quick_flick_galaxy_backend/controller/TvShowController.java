@@ -40,6 +40,12 @@ public class TvShowController {
         return this.tvShowService.updateTvShowById(movieUpdated, id);
     }
 
+    @DeleteMapping
+    public Boolean deleteTvShows(){
+
+        return this.tvShowService.deleteTvShows();
+    }
+
     @DeleteMapping(path = "/{id}")
     public Boolean deleteTvShowById(@PathVariable Long id){
 

@@ -1,20 +1,21 @@
 package com.quick_flick_galaxy.quick_flick_galaxy_backend.models;
 
 import jakarta.persistence.*;
-import java.util.Date;
+
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "movie")
 public class MovieModel {
 
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
     private String overview;
-    private Float popularity;
-    private Date releaseDate;
+    private Double popularity;
+    private LocalDate releasedate;
 
     public Long getId() {
         return id;
@@ -40,19 +41,19 @@ public class MovieModel {
         this.overview = overview;
     }
 
-    public Float getPopularity() {
+    public Double getPopularity() {
         return popularity;
     }
 
-    public void setPopularity(Float popularity) {
+    public void setPopularity(Double popularity) {
         this.popularity = popularity;
     }
 
-    public Date getReleaseDate() {
-        return releaseDate;
+    public LocalDate getReleasedate() {
+        return releasedate;
     }
 
-    public void setReleaseDate(Date releaseDate) {
-        this.releaseDate = releaseDate;
+    public void setReleasedate(LocalDate releasedate) {
+        this.releasedate = releasedate;
     }
 }
