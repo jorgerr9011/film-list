@@ -1,16 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Populares from "../components/Populares.astro";
+import Populares from "../components/News.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<section>
-			<h1>Hooola</h1>
+			<Populares />
 		</section>
-
-		<section>
+		<section class="mb-48">
 			<Populares />
 		</section>
 	</main>

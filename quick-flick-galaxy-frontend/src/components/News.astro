@@ -1,0 +1,40 @@
+---
+const response = await fetch("http://localhost:8080/movie", {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json",
+    },
+});
+
+const data = await response.json();
+
+const pelis = data.slice(0, 5);
+---
+
+<div
+    class="container flex flex-col mx-auto justify-center align-center mt-32 gap-8"
+>
+    <h1 class="text-xxl font-semibold">Novedades</h1>
+
+    <div class="flex flex-row align-center justify-between">
+        {
+            pelis.map((peli: any) => (
+                <div class="flex flex-col justify-between mx-8">
+                    <img
+                        loading="lazy"
+                        alt={`Imagen de ${peli.title}`}
+                        src={peli.poster}
+                        class="transition hover:scale-110"
+                    />
+
+                    <div class="flex flex-col w-48 mt-4 mx-8">
+                        <h1 class="text-lg mt-2">{peli.title}</h1>
+                        <h1 class="text-lg mt-2">{peli.releasedate}</h1>
+
+                        <h1 class="text-lg mt-2">{peli.popularity}</h1>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>
