@@ -43,6 +43,7 @@ public class TvShowModel {
      * del objeto de Java */
     //@JsonProperty("releaseDate")
     private LocalDate releasedate;
+    private String poster;
 
     @Override
     public boolean equals(Object o) {

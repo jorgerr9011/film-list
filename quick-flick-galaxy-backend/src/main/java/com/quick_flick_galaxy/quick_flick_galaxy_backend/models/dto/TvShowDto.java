@@ -24,4 +24,5 @@ public class TvShowDto {
     private String overview;
     private Double popularity;
     private LocalDate releasedate;
+    private String poster;
 }

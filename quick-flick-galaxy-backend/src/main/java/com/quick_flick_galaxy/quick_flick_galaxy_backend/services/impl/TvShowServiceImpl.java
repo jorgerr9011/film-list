@@ -6,7 +6,6 @@ import com.quick_flick_galaxy.quick_flick_galaxy_backend.services.TvShowService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -41,6 +40,7 @@ public class TvShowServiceImpl implements TvShowService {
             tvShow.setPopularity(tvShowUpdated.getPopularity());
             tvShow.setTitle(tvShowUpdated.getTitle());
             tvShow.setReleasedate(tvShowUpdated.getReleasedate());
+            tvShow.setPoster(tvShowUpdated.getPoster());
 
             return tvShow;
         } else {
