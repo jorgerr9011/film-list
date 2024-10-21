@@ -1,4 +1,6 @@
-# quick-flick-galaxy
+<h1 align="center"> QUICK-FLICK-GALAXY </h1>
+
+
 
 ![imagen](https://github.com/user-attachments/assets/a87e4a60-3128-4226-8376-07d3fd3e23de)
 
