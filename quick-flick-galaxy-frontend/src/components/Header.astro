@@ -3,35 +3,42 @@
 ---
 
 <header class="mt-6">
-    <nav class="flex opacity-90 items-center justify-between bg-blend-overlay">
-        
-        <div class="flex justify-start ml-16">
+    <nav class="flex opacity-90 items-start justify-between bg-blend-overlay">
+        <div class="flex justify-start items-center ml-16 w-1/4">
             <img
                 src="/wild_robot.jpg"
                 class="rounded-full size-16 transition hover:scale-110"
             />
+            <form action="" method="GET" class="flex mx-auto w-full ml-16">
+                <input 
+                    type="text"
+                    name="search"
+                    placeholder="Buscar..."
+                    class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+            </form>
         </div>
-        
-        <div class="flex justify-center">
+
+        <div class="flex justify-start items-start w-2/4 ml-28">
             <a
-                class="text-lg font-semibold transition px-10 py-2 rounded-lg hover:scale-110"
+                class="text-lg font-semibold transition px-10 py-4 rounded-lg hover:scale-110"
                 >Home</a
             >
 
             <a
-                class="text-lg font-semibold transition px-10 py-2 rounded-lg hover:scale-110"
+                class="text-lg font-semibold transition px-10 py-4 rounded-lg hover:scale-110"
                 >Movies</a
             >
 
             <a
-                class="text-lg font-semibold transition px-10 py-2 rounded-lg hover:scale-110"
+                class="text-lg font-semibold transition px-10 py-4 rounded-lg hover:scale-110"
                 >TvShows</a
             >
         </div>
 
         <div class="flex justify-end align-end">
             <a
-                class="text-lg font-semibold transition mr-16 py-2 rounded-lg hover:scale-110"
+                class="text-lg font-semibold transition mr-16 py-4 rounded-lg hover:scale-110"
                 >Profile</a
             >
         </div>
