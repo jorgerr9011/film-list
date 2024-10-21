@@ -1,5 +1,7 @@
 # quick-flick-galaxy
 
+![imagen](https://github.com/user-attachments/assets/a87e4a60-3128-4226-8376-07d3fd3e23de)
+
 Este proyecto tiene como objetivo desarrollar una aplicación web que permita realizar 
 búsquedas eficientes y precisas en una extensa base de datos de series y películas. 
 Utilizando Spring Boot como framework principal, se implementará un motor de búsqueda 
