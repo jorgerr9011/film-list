@@ -1,6 +1,5 @@
 package com.quick_flick_galaxy.quick_flick_galaxy_backend.models;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -50,11 +49,11 @@ public class MovieModel {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof MovieModel that)) return false;
-        return Objects.equals(id, that.id) && Objects.equals(title, that.title) && Objects.equals(overview, that.overview) && Objects.equals(popularity, that.popularity) && Objects.equals(releasedate, that.releasedate);
+        return Objects.equals(id, that.id) && Objects.equals(title, that.title) && Objects.equals(overview, that.overview) && Objects.equals(popularity, that.popularity) && Objects.equals(releasedate, that.releasedate) && Objects.equals(poster, that.poster);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, overview, popularity, releasedate);
+        return Objects.hash(id, title, overview, popularity, releasedate, poster);
     }
 }

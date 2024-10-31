@@ -29,6 +29,7 @@ public class MovieIntegrationTests {
         movie.setOverview("Overview test");
         movie.setPopularity(1.22);
         movie.setReleasedate(LocalDate.now());
+        movie.setPoster("http://#");
 
         return movie;
     }

@@ -2,7 +2,6 @@ package com.quick_flick_galaxy.quick_flick_galaxy_backend.services;
 
 import com.quick_flick_galaxy.quick_flick_galaxy_backend.models.TvShowModel;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

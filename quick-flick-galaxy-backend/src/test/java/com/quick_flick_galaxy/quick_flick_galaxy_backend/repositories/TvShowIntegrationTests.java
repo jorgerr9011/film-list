@@ -1,6 +1,7 @@
 package com.quick_flick_galaxy.quick_flick_galaxy_backend.repositories;
 
 import com.quick_flick_galaxy.quick_flick_galaxy_backend.models.TvShowModel;
+import net.bytebuddy.asm.Advice;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,7 @@ public class TvShowIntegrationTests {
         tvShow.setOverview("Overview test");
         tvShow.setPopularity(2.22);
         tvShow.setReleasedate(LocalDate.now());
+        tvShow.setPoster("http://#");
 
         return tvShow;
     }

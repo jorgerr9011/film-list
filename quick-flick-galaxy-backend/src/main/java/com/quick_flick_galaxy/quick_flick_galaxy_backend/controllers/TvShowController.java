@@ -15,11 +15,15 @@ import java.util.stream.Collectors;
 @RequestMapping("/tvshow")
 public class TvShowController {
 
-    @Autowired
-    private TvShowService tvShowService;
+    private final TvShowService tvShowService;
+
+    private final Mapper<TvShowModel, TvShowDto> tvShowMapper;
 
     @Autowired
-    private Mapper<TvShowModel, TvShowDto> tvShowMapper;
+    public TvShowController(TvShowService tvShowService, Mapper<TvShowModel, TvShowDto> tvShowMapper){
+        this.tvShowService = tvShowService;
+        this.tvShowMapper = tvShowMapper;
+    }
 
     @GetMapping
     public List<TvShowDto> getTvShows(){

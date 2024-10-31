@@ -18,12 +18,12 @@ public class MovieServiceImpl implements MovieService {
 
     public List<MovieModel> getMovies(){
 
-        return (List<MovieModel>) movieRepository.findAll();
+        return movieRepository.findAll();
     }
 
     public List<MovieModel> saveMovies(List<MovieModel> movies) {
 
-        return (List<MovieModel>) movieRepository.saveAll(movies);
+        return movieRepository.saveAll(movies);
     }
 
     public Optional<MovieModel> getMovieById(Long id) {
