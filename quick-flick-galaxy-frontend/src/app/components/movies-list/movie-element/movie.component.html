@@ -1,3 +1,18 @@
-<section>
-    <h1>{{ movieData.title }}</h1>
-</section>
+<li class="flex flex-col w-5/6 justify-between m-6">
+    <article>
+        <img
+            src={{movieData.poster}}
+            class="w-[200px] transition hover:scale-110"
+        />
+
+        <footer class="flex flex-col w-48 mt-4">
+            <h1 class="text-lg font-semibold mt-2">
+                {{movieData.title}}
+            </h1>
+            <h1 class="text-lg text-green-400 mt-2">
+                {{movieData.popularity}}
+            </h1>
+            <h1 class="text-sm mt-2">{{movieData.releasedate}}</h1>
+        </footer>
+    </article>
+</li>

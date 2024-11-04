@@ -1,7 +1,10 @@
 <section>
-    <h1>Funciona!</h1>
-    <section>
-        <app-movie *ngFor="let movieData of moviesData" [movieData]="movieData">
-        </app-movie>
-    </section>
+    <div class="container flex flex-col mx-auto justify-center align-center mt-16 gap-8">
+        <h1 class="text-xxl font-semibold">Novedades</h1>
+
+        <ul class="grid grid-cols-8 align-center justify-between">
+            <app-movie *ngFor="let movieData of moviesData" [movieData]="movieData">
+            </app-movie>
+        </ul>
+    </div>
 </section>

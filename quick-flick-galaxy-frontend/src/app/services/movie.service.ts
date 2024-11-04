@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
+import { Movie } from '../models/movie/index';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class MovieService {
   http = inject(HttpClient)
 
   // Método para hacer una petición GET
-  async getData(): Promise<Observable<any>> {
-    return this.http.get<any>(this.url); 
+  getData(): Observable<Movie[]> {
+    return this.http.get<Movie[]>(this.url); 
   }
 }
